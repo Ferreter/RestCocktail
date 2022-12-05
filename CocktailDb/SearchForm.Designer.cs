@@ -31,6 +31,8 @@
             this.CocktailDbHeading = new System.Windows.Forms.Label();
             this.SearchBar = new System.Windows.Forms.TextBox();
             this.SearchButton = new System.Windows.Forms.Button();
+            this.SearchIngrediant = new System.Windows.Forms.Button();
+            this.Random = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // CocktailDbHeading
@@ -47,35 +49,59 @@
             // 
             // SearchBar
             // 
-            this.SearchBar.Location = new System.Drawing.Point(119, 120);
+            this.SearchBar.Location = new System.Drawing.Point(127, 117);
             this.SearchBar.Name = "SearchBar";
-            this.SearchBar.Size = new System.Drawing.Size(404, 22);
+            this.SearchBar.Size = new System.Drawing.Size(359, 22);
             this.SearchBar.TabIndex = 3;
-            this.SearchBar.Text = "Enter any ingrediant or cocktail name";
+            this.SearchBar.Text = "Enter any cocktail name or ingrediant ";
             this.SearchBar.TextChanged += new System.EventHandler(this.SearchBar_TextChanged);
             // 
             // SearchButton
             // 
             this.SearchButton.Enabled = false;
-            this.SearchButton.Location = new System.Drawing.Point(583, 113);
+            this.SearchButton.Location = new System.Drawing.Point(558, 115);
             this.SearchButton.Name = "SearchButton";
-            this.SearchButton.Size = new System.Drawing.Size(114, 37);
+            this.SearchButton.Size = new System.Drawing.Size(112, 49);
             this.SearchButton.TabIndex = 4;
-            this.SearchButton.Text = "Search";
+            this.SearchButton.Text = "Search by Name";
             this.SearchButton.UseVisualStyleBackColor = true;
             this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
+            // 
+            // SearchIngrediant
+            // 
+            this.SearchIngrediant.Enabled = false;
+            this.SearchIngrediant.Location = new System.Drawing.Point(714, 115);
+            this.SearchIngrediant.Name = "SearchIngrediant";
+            this.SearchIngrediant.Size = new System.Drawing.Size(112, 49);
+            this.SearchIngrediant.TabIndex = 5;
+            this.SearchIngrediant.Text = "Search by Ingrediant";
+            this.SearchIngrediant.UseVisualStyleBackColor = true;
+            this.SearchIngrediant.Click += new System.EventHandler(this.SearchIngrediant_Click);
+            // 
+            // Random
+            // 
+            this.Random.Location = new System.Drawing.Point(795, 12);
+            this.Random.Name = "Random";
+            this.Random.Size = new System.Drawing.Size(75, 46);
+            this.Random.TabIndex = 6;
+            this.Random.Text = "Random Cocktail";
+            this.Random.UseVisualStyleBackColor = true;
+            this.Random.Click += new System.EventHandler(this.Random_Click);
             // 
             // CocktailDb
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(884, 646);
+            this.ClientSize = new System.Drawing.Size(882, 646);
+            this.Controls.Add(this.Random);
+            this.Controls.Add(this.SearchIngrediant);
             this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.SearchBar);
             this.Controls.Add(this.CocktailDbHeading);
             this.Name = "CocktailDb";
             this.Text = "CocktailDb";
+            this.Load += new System.EventHandler(this.CocktailDb_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -85,6 +111,8 @@
         private System.Windows.Forms.Label CocktailDbHeading;
         private System.Windows.Forms.TextBox SearchBar;
         private System.Windows.Forms.Button SearchButton;
+        private System.Windows.Forms.Button SearchIngrediant;
+        private System.Windows.Forms.Button Random;
     }
 }
 

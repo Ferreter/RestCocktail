@@ -5,7 +5,8 @@ namespace CocktailDb
 {
     public partial class CocktailDb
     {
-        public class Drink
+        //JSON for ByName and Random
+        public class DrinkbyName
         {
             public string idDrink { get; set; }
             public string strDrink { get; set; }
@@ -64,6 +65,14 @@ namespace CocktailDb
             public string dateModified { get; set; }
 
 
+        }
+
+        //JSON for by Ingrediant
+        public class DrinkbyIngrediant
+        {
+            public string strDrink { get; set; }
+            public string strDrinkThumb { get; set; }
+            public string idDrink { get; set; }
         }
     }
 }
