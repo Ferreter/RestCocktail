@@ -38,6 +38,7 @@
             this.Ingrediant2 = new System.Windows.Forms.Label();
             this.Ingrediant3 = new System.Windows.Forms.Label();
             this.Ingrediant4 = new System.Windows.Forms.Label();
+            this.CkInstructions = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.CkPic)).BeginInit();
             this.SuspendLayout();
             // 
@@ -168,11 +169,26 @@
             this.Ingrediant4.Text = "Ingrediant 4";
             this.Ingrediant4.Click += new System.EventHandler(this.Ingrediant4_Click);
             // 
+            // CkInstructions
+            // 
+            this.CkInstructions.AutoSize = true;
+            this.CkInstructions.BackColor = System.Drawing.SystemColors.Control;
+            this.CkInstructions.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CkInstructions.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.CkInstructions.Location = new System.Drawing.Point(47, 448);
+            this.CkInstructions.MaximumSize = new System.Drawing.Size(600, 0);
+            this.CkInstructions.Name = "CkInstructions";
+            this.CkInstructions.Size = new System.Drawing.Size(84, 18);
+            this.CkInstructions.TabIndex = 14;
+            this.CkInstructions.Text = "Instructions";
+            this.CkInstructions.Click += new System.EventHandler(this.CkInstructions_Click);
+            // 
             // CocktailByName
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(861, 460);
+            this.ClientSize = new System.Drawing.Size(946, 531);
+            this.Controls.Add(this.CkInstructions);
             this.Controls.Add(this.Ingrediant4);
             this.Controls.Add(this.Ingrediant3);
             this.Controls.Add(this.Ingrediant2);
@@ -204,5 +220,6 @@
         private System.Windows.Forms.Label Ingrediant2;
         private System.Windows.Forms.Label Ingrediant3;
         private System.Windows.Forms.Label Ingrediant4;
+        private System.Windows.Forms.Label CkInstructions;
     }
 }

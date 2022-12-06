@@ -131,6 +131,18 @@ namespace CocktailDb
             }
         }
 
+        public string CkInstructionsSet
+        {
+            get
+            {
+                return this.CkInstructions.Text;
+            }
+            set
+            {
+                this.CkInstructions.Text = value;
+            }
+        }
+
 
         private void Category_Click(object sender, EventArgs e)
         {
@@ -173,6 +185,11 @@ namespace CocktailDb
         }
 
         private void CkPic_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CkInstructions_Click(object sender, EventArgs e)
         {
 
         }

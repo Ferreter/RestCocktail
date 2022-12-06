@@ -55,7 +55,8 @@ namespace CocktailDb
                 nameCocktails.CkIng2 = "Ingrediant 2 : " + d.strIngredient2;
                 nameCocktails.CkIng3 = "Ingrediant 3 : " + d.strIngredient3;
                 nameCocktails.CkIng4 = "Ingrediant 4 : " + d.strIngredient4;
-                nameCocktails.CkPicLoc = d.strDrinkThumb + "/preview";
+                nameCocktails.CkPicLoc = d.strDrinkThumb + "/preview"; //adding preview as mentioned in API to reduce image size
+                nameCocktails.CkInstructionsSet = "Instructions : " + d.strInstructions;
 
                 //Displaying the form after changes are made
                 nameCocktails.ShowDialog();
@@ -92,7 +93,7 @@ namespace CocktailDb
         public void getRandom()
         {
             //Making the client
-            var client = new RestClient("https://www.thecocktaildb.com/api/json/v1/1/random.php");
+            var client = new RestClient("https://www.thecocktaildb.com/api/json/v1/1/random.php"); // random call url
             var request = new RestRequest();
 
             //Service call
@@ -115,7 +116,8 @@ namespace CocktailDb
                 nameCocktails.CkIng2 = "Ingrediant 2 : " + d.strIngredient2;
                 nameCocktails.CkIng3 = "Ingrediant 3 : " + d.strIngredient3;
                 nameCocktails.CkIng4 = "Ingrediant 4 : " + d.strIngredient4;
-                nameCocktails.CkPicLoc = d.strDrinkThumb + "/preview";
+                nameCocktails.CkPicLoc = d.strDrinkThumb + "/preview"; //adding preview as mentioned in API to reduce image size
+                nameCocktails.CkInstructionsSet = "Instructions : " + d.strInstructions;
 
                 //Displaying the form after changes are made
                 nameCocktails.ShowDialog();

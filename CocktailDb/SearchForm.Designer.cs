@@ -93,7 +93,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(882, 646);
+            this.ClientSize = new System.Drawing.Size(890, 241);
             this.Controls.Add(this.Random);
             this.Controls.Add(this.SearchIngrediant);
             this.Controls.Add(this.SearchButton);
